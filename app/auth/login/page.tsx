@@ -30,7 +30,7 @@ function LoginPage() {
                   id="email"
                   name="email"
                   type="email"
-                  autocomplete="email"
+                  autoComplete="email"
                   required
                   className="block w-full px-3 py-2 placeholder-gray-400  border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-accent focus:border-accent sm:text-sm"
                 />
@@ -46,7 +46,7 @@ function LoginPage() {
                     id="password"
                     name="password"
                     type="password"
-                    autocomplete="current-password"
+                    autoComplete="current-password"
                     required
                     className="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-accent focus:border-accent sm:text-sm"
                   />
@@ -74,33 +74,36 @@ function LoginPage() {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center">
+              <div className="block items-center justify-between">
+                <div className="flex items-center my-4 justify-between">
                   <Button
                     type="submit"
-                    className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-accent bg-accent hover:bg-accent/50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
+                    className="group relative w-1/2 border border-transparent focus:ring-2 focus:ring-offset-2 focus:ring-accent"
                   >
                     Sign in
                   </Button>
-                  <span className="text-sm">
-                    or
-                  </span>
-                  <Link
-                    href="#"
-                    className="ml-1 text-sm text-accent hover:text-accent/50"
-                  >
-                    Sign up
-                  </Link>
-                  <div className="flex items-center justify-center mt-4 sm:mt-0">
+                  <>
+                    <span className="text-sm justify-end">
+                      or
 
-                    <Button variant="outline" className="w-full text-sm">
-                      Continue with Google
-                    </Button>
+                      <Link
+                        href="#"
+                        className="ml-2 text-sm underline"
+                      >
+                        Sign up
+                      </Link>
+                    </span>
+                  </>
+                </div>
+                <div className="block items-center justify-center mt-4 sm:mt-0">
 
-                    <Button variant="outline" className="w-full text-sm">
-                      Continue with Facebook
-                    </Button>
-                  </div>
+                  <Button variant="outline" className="w-full text-sm">
+                    Continue with Google
+                  </Button>
+
+                  <Button variant="outline" className="w-full text-sm">
+                    Continue with Facebook
+                  </Button>
                 </div>
               </div>
             </div>
