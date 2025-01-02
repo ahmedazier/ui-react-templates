@@ -35,12 +35,12 @@ function LoginPage() {
                   className="block w-full px-3 py-2 placeholder-gray-400  border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-accent focus:border-accent sm:text-sm"
                 />
                 <p className="text-sm text-gray-500">
-                  We'll never share your email address.
+                  We will never share your email address.
                 </p>
               </div>
 
               <div>
-                <label className="block text-sm font-medium">Password</label>
+                <label className="block text-sm font-medium mt-5">Password</label>
                 <div className="mt-1">
                   <input
                     id="password"
@@ -60,16 +60,11 @@ function LoginPage() {
                     type="checkbox"
                     className="h-4 w-4 text-accent border-gray-300 rounded focus:ring-accent"
                   />
-                  <label
-                    htmlFor="remember"
-                    className="ml-2 block text-sm "
-                  >
-                     Remember me
+                  <label htmlFor="remember" className="ml-2 block text-sm ">
+                    Remember me
                   </label>
-                  <a
-                    href="#"
-                    className="text-sm hover:text-gray-900"
-                  >
+                  &nbsp;
+                  <a href="#" className="text-sm hover:underline">
                     Forgot your password?
                   </a>
                 </div>
@@ -85,18 +80,13 @@ function LoginPage() {
                   <>
                     <span className="text-sm justify-end">
                       or
-
-                      <Link
-                        href="#"
-                        className="ml-2 text-sm underline"
-                      >
+                      <Link href="#" className="ml-2 text-sm underline">
                         Sign up
                       </Link>
                     </span>
                   </>
                 </div>
-                <div className="block items-center justify-center mt-4 sm:mt-0">
-
+                <div className="block items-center justify-center space-y-2 mt-10 sm:mt-0">
                   <Button variant="outline" className="w-full text-sm">
                     Continue with Google
                   </Button>
